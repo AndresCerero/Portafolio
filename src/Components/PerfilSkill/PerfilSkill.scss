@@ -1,0 +1,27 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Perfil__Skills {
+  background-color: vars.$Negative_Color3;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.4rem;
+  padding: 2.5rem 0 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.Perfil__Skills__Content {
+  width: 90%;
+}
+
+.Skills__Descripcion__Tittle {
+  color: vars.$Second-Color;
+  @include vars.h5-Tittle();
+  margin-bottom: 2rem;
+}
+
+.Perfil__Skills__Descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}

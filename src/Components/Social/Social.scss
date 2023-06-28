@@ -1,0 +1,27 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Footer__Redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+
+.Footer__Redes_link {
+  width: clamp(2rem, 60%, 6rem);
+  background-color: vars.$Gray3-Color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+
+  &:hover {
+    background-color: vars.$Second-Color;
+    transition: background-color 0.3s ease, fill 0.3s ease;
+  }
+}
+
+.Footer__Redes_link--Margen {
+  margin-left: 1rem;
+}

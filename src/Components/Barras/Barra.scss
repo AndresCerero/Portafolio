@@ -1,0 +1,36 @@
+@use "../../Vars_Design/vars" as vars;
+
+
+.Skills__Descripcion__Container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Skills__Descripcion__Barra {
+  position: relative;
+  display: inline-block;
+
+  span {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 1rem;
+    background-color: vars.$Gray1-Color;
+    border-radius: 5rem;
+  }
+
+  .Skills__Barra--front {
+    background-color: vars.$Second-Color;
+    position: relative;
+  }
+}
+
+.Skills__Descripcion__Parrafo {
+  @include vars.P3-Paragraphs();
+  color: vars.$Neutral2-Color;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+

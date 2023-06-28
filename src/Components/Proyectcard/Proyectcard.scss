@@ -1,0 +1,41 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Projects__Slider__Card {
+  position: relative;
+  scroll-snap-align: center;
+  min-width: clamp(25rem, 50%, 40rem);
+  max-width: clamp(25rem, 50%, 40rem);
+  background: #153738;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  .Projects__Slider__Card__Img {
+    object-fit: cover;
+    object-position: top top;
+    aspect-ratio: 1 / 1;
+    transition: transform 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .Projects__Slider__Card__Button {
+    @include vars.h5-Tittle();
+    color: vars.$Second-Color;
+    background-color: vars.$first-Color;
+    padding: 1.2rem 2rem;
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+
+    &:hover{
+      background-color: vars.$Second-Color;
+      color: vars.$Third-Color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+}

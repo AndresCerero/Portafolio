@@ -1,0 +1,54 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Items {
+  width: 106%;
+  padding: 0 0 2rem 0;
+}
+
+.Items__Tittle {
+  @include vars.h4-Tittle();
+  color: vars.$Second-Color;
+  padding-bottom: 1rem;
+}
+
+.Items__Slider {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+
+  &::-webkit-scrollbar {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    position: relative;
+    height: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: vars.$Gray3-Color;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2rem;
+  }
+}
+
+.Items__Slider__Card {
+  position: relative;
+  scroll-snap-align: center;
+  min-width: clamp(25rem, 50%, 40rem);
+  max-width: clamp(25rem, 50%, 40rem);
+  aspect-ratio: 1 / 1;
+  background: #153738;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: top top;
+}

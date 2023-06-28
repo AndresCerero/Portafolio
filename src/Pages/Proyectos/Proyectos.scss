@@ -1,0 +1,137 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Proyectos {
+  background-color: vars.$Neutral1-Color;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Proyectos__Flex__Desktop {
+  padding: clamp(1rem, 50%, 3rem) clamp(0, 0, 0);
+
+  @include vars.Desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.Proyectos__Container__First {
+  flex: 1 1 36rem;
+
+  .Proyectos__Tittle {
+    color: vars.$Second-Color;
+    @include vars.h3-Tittle();
+    text-align: center;
+    padding: 1.6rem;
+  }
+
+  .Proyectos__Imagenes {
+    display: none;
+    position: relative;
+    height: auto;
+
+    @include vars.Desktop {
+      display: flex;
+    }
+    .Proyectos__Imagenes__Person {
+      position: relative;
+      z-index: 2;
+    }
+
+    .Proyectos__Imagenes__Blob {
+      position: absolute;
+      left: -12%;
+      bottom: -6%;
+      transform: scale(0.92);
+    }
+  }
+}
+
+.Proyectos__Container__Second {
+  flex: 1 1 90rem;
+
+  .Proyectos_Container {
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+
+    @include vars.tablet {
+      flex-direction: row;
+    }
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .Proyectos__First {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include vars.tablet {
+      flex: 1 1 40%;
+    }
+  }
+
+  .Proyectos__Second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include vars.tablet {
+      flex: 1 1 40%;
+    }
+
+    .Proyecto__Container_Tittle {
+      color: vars.$Second-Color;
+      @include vars.h4-Tittle();
+      text-align: center;
+      padding: 1.6rem;
+    }
+
+    .Proyecto__Container_Parrafo {
+      @include vars.P3-Paragraphs();
+      color: vars.$Neutral2-Color;
+      text-align: center;
+      padding: 0 1.6rem 1.6rem 1.6rem;
+      line-height: 1.6em;
+    }
+
+    .Proyecto__Tecnologias {
+      width: clamp(30rem, 50%, 80rem);
+      display: flex;
+      gap: 3rem;
+      justify-content: space-evenly;
+      padding: 0 1.6rem 1.6rem 1.6rem;
+    }
+
+    .Proyecto__Tecnologia {
+      background-color: vars.$Gray3-Color;
+      border-radius: 0.8rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.Proyectos__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 2rem 0;
+
+  .Proyectos__controls__Button {
+    @include vars.h4-Tittle();
+    color: vars.$Second-Color;
+    background-color: vars.$first-Color;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    width: 4rem;
+    cursor: pointer;
+  }
+}

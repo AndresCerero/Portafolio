@@ -1,0 +1,117 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Home {
+  background-color: vars.$Neutral1-Color;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include vars.Desktop {
+    .Home__Perfil__Projectss {
+      position: relative;
+      z-index: 4;
+      margin-top: -14%;
+    }
+  }
+}
+
+.Home__Perfil {
+  display: flex;
+  flex-direction: column;
+
+  @include vars.Desktop {
+    flex-direction: row-reverse;
+  }
+}
+
+.Home__Perfil__Parrafo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
+
+  .Home__Perfil__Tittle {
+    color: vars.$Second-Color;
+    @include vars.h2-Tittle();
+    text-align: center;
+    padding: 1.2rem;
+  }
+
+  .Home__Perfil__Paragraph {
+    @include vars.P1-Paragraphs();
+    color: vars.$Neutral2-Color;
+    text-align: center;
+    padding: 1.2rem;
+    line-height: 1.6em;
+  }
+
+  .Home__Perfil__Buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.2rem;
+    align-items: center;
+
+    .Home__Perfil__Button {
+      @include vars.h4-Tittle();
+      color: vars.$Second-Color;
+      background-color: vars.$first-Color;
+      border-radius: 1.2rem;
+      cursor: pointer;
+
+      padding: clamp(0.8rem, 50%, 1.2rem) clamp(2rem, 50%, 6rem)
+        clamp(0.8rem, 50%, .8rem);
+
+      &:hover {
+        background-color: vars.$Second-Color;
+        color: vars.$Third-Color;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    }
+
+    .Home__Perfil__Button--Margin {
+      margin-bottom: 2rem;
+      @include vars.mobile {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include vars.Desktop {
+    margin-top: 6%;
+  }
+
+  @include vars.DesktopX {
+    margin-top: 10%;
+  }
+}
+
+.Home__Perfil__Imagenes {
+  position: relative;
+  margin-top: 2.2rem;
+  margin-bottom: 2rem;
+
+  .Home__Perfil__Image {
+    position: relative;
+    z-index: 2;
+  }
+
+  .Home__Perfil__Blob {
+    position: absolute;
+    top: 16%;
+    left: 0%;
+    z-index: 1;
+    transform: scale(1.2);
+
+    @include vars.DesktopX {
+      left: 14%;
+    }
+  }
+
+  @include vars.Desktop {
+    width: 80%;
+  }
+}

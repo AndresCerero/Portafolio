@@ -1,0 +1,71 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Perfil {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Perfil__Container {
+  margin-top: clamp(1rem, 50%, 2rem);
+  display: flex;
+  flex-direction: column;
+
+  @include vars.Desktop {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.Perfil__First {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include vars.Desktop {
+    flex: 1 1 40%;
+  }
+
+  .Perfil__Imagen {
+    width: clamp(40rem, 50%, 60rem);
+    margin: 1rem 0;
+
+    border-radius: 50%;
+  }
+
+  .Perfil__Tittle {
+    color: vars.$Second-Color;
+    @include vars.h3-Tittle();
+    text-align: center;
+    padding: clamp(1rem, 50%, 2rem) clamp(1rem, 50%, 2rem);
+  }
+
+  .Perfil__Descripcion {
+    @include vars.P2-Paragraphs();
+    color: vars.$Neutral2-Color;
+    text-align: center;
+    padding: 0 2rem 1.6rem;
+    line-height: 1.6em;
+  }
+
+  .Perfil__Button {
+    @include vars.h5-Tittle();
+    color: vars.$Second-Color;
+    background-color: vars.$first-Color;
+    border-radius: 0.6rem;
+    padding: 1.6rem 1.8rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      background-color: vars.$Second-Color;
+      color: vars.$Third-Color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+}
+
+.Perfil__Second {
+  @include vars.Desktop {
+    flex: 2 1 50%;
+  }
+}

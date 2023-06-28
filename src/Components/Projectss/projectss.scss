@@ -1,0 +1,40 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Projectss {
+  width: 106%;
+  padding: 2rem 0 2rem 0;
+}
+
+.Projectss__Tittle {
+  @include vars.h4-Tittle();
+  color: vars.$Second-Color;
+  padding-bottom: 1rem;
+}
+
+.Projects__Slider {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+
+  &::-webkit-scrollbar {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    position: relative;
+    height: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: vars.$Gray3-Color;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2rem;
+  }
+}

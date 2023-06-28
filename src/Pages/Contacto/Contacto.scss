@@ -1,0 +1,125 @@
+@use "../../Vars_Design/vars" as vars;
+
+.contacto {
+  width: 90%;
+}
+
+.contacto__container {
+  @include vars.Desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contacto__First {
+
+  flex: 2 1 40%;
+  
+  .contacto__imagenes {
+
+    position: relative;
+
+    .contacto__imagenes__imagen {
+      position: relative;
+      transform: scale(0.8);
+      z-index: 1;
+    }
+
+    .contacto__imagenes__blob {
+      position: absolute;
+      z-index: 0;
+      left: -2%;
+      bottom: 1%;
+      transform: scale(0.8);
+    }
+  }
+}
+
+.contacto__Second {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 30%;
+
+  .contacto__Tittle {
+    color: vars.$Second-Color;
+    @include vars.h3-Tittle();
+    text-align: center;
+    padding: 1rem 1rem 0.6rem 1rem;
+    position: relative;
+    z-index: 1;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .contacto__form {
+    width: 100%;
+    display: flex;
+    margin: 0 0 3rem 0;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .contacto__form_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .contacto_form__name {
+    @include vars.h5-Tittle();
+    color: vars.$Neutral2-Color;
+    margin: 0 0 1rem 0;
+  }
+
+  .contacto_form__input {
+    border-radius: 0.6rem;
+    border: 1px solid vars.$Gray3-Color;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+
+    &:focus {
+      outline: none;
+      border-color: vars.$Second-Color;
+    }
+    &:active {
+      outline: none;
+    }
+  }
+
+  .contacto_form__mensaje {
+    @include vars.h5-Tittle();
+    color: vars.$Neutral2-Color;
+    margin: 0 0 1rem 0;
+  }
+
+  .contacto_form__textArea {
+    border-radius: 0.6rem;
+    height: 10rem;
+    border: 1px solid vars.$Gray3-Color;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    &:focus {
+      outline: none;
+      border-color: vars.$Second-Color;
+    }
+    &:active {
+      outline: none;
+    }
+  }
+
+  .Form__Button {
+    @include vars.h5-Tittle();
+    color: vars.$Second-Color;
+    background-color: vars.$first-Color;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem 0.8rem 1rem;
+
+    &:hover {
+      background-color: vars.$Second-Color;
+      color: vars.$Third-Color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "../../Vars_Design/vars" as vars;
+
+.Footer {
+  background-color: vars.$Neutral1-Color;
+  display: flex;
+  justify-content: center;
+}
+
+.Footer__Container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.2rem 0 1.2rem 0;
+  border-top: 2px solid vars.$Gray3-Color;
+}
+
+.Footer__CopyRight {
+  color: vars.$Neutral2-Color;
+  @include vars.P4-Paragraphs;
+  line-height: 1.4em;
+}
+

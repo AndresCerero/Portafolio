@@ -1,0 +1,9 @@
+@use '../../src/Vars_Design/vars';
+
+.Layout{
+    background-color: vars.$Neutral1-Color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
