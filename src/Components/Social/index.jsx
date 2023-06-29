@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
-import Linkeind from "../../assets/Linkedin.svg";
-import Github from "../../assets/Github.svg";
+import Linkeind from "../../Img/Linkedin.svg";
+import Github from "../../Img/Github.svg";
 
 import "./Social.scss";
 

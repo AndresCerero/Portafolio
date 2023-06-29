@@ -7,10 +7,10 @@ import "./Proyectos.scss";
 import projects from "../../Data/Data.jsx";
 
 //img
-import Blob3 from '../../assets/blob3.png';
-import ImgProyectos from '../../assets/ImagenProyecto.png';
-import Left from '../../assets/Left.svg';
-import Right from '../../assets/Right.svg';
+import Blob3 from '../../Img/blob3.png';
+import ImgProyectos from '../../Img/ImagenProyecto.png';
+import Left from '../../Img/Left.svg';
+import Right from '../../Img//Right.svg';
 
 //Componentes
 import Layout from "../../Layout/Index";

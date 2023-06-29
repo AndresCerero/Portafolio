@@ -1,13 +1,12 @@
-import ContactoForm from '../../assets/ImagendeContactoForm.png';
-import Blob2 from '../../assets/blob2.png';
-
+//Img
+import ContactoForm from "../../Img/ImagendeContactoForm.png";
+import Blob2 from "../../Img/blob2.png";
 
 import "./Contacto.scss";
 
 import Layout from "../../Layout/Index";
 
 const Contacto = () => {
-
   return (
     <Layout>
       <section className="contacto">
@@ -17,14 +16,14 @@ const Contacto = () => {
               <figure>
                 <img
                   src={Blob2}
-                  alt='Blob2'
+                  alt="Blob2"
                   className="contacto__imagenes__blob"
                 />
               </figure>
               <figure>
                 <img
                   src={ContactoForm}
-                  alt='ContactoForm'
+                  alt="ContactoForm"
                   className="contacto__imagenes__imagen"
                 />
               </figure>

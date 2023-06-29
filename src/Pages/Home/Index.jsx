@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 
 //img
-import ImgPerfil from "../../assets/ImagendeHome.png";
-import Blob1 from '../../assets/blob1.png';
-import ImgPerfil2 from '../../assets/ImagendePerfil.png';
+import ImgPerfil from "../../Img/ImagendeHome.png";
+import Blob1 from '../../Img/blob1.png';
+import ImgPerfil2 from '../../Img/ImagendePerfil.png';
 
 //Components
 import Items from "../../Components/Items/Index";

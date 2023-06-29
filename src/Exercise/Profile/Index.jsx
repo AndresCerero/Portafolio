@@ -1,6 +1,6 @@
 import './Profile.scss'
 
-import FotoIncognita from "../../assets/ImagenFoto.png";
+import FotoIncognita from "../../Img/ImagenFoto.png";
 
 const Profile = () => {
   return (

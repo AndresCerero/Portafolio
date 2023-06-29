@@ -3,7 +3,8 @@ import Layout from "../../Layout/Index";
 import PerfilSkill from "../../Components/PerfilSkill/Index";
 import Projectss from "../../Components/Projectss/Index";
 
-import FotoIncognita from "../../assets/ImagenFoto.png";
+//Img
+import FotoIncognita from "../../Img/ImagenFoto.png";
 
 import "./Perfil.scss";
 import { Link } from "react-router-dom";

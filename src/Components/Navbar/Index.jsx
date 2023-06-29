@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 
 import Social from "../Social/index.jsx";
 
-import Logo from "../../assets/Logo.svg";
-import Menu from "../../assets/Menu.svg";
+//Img
+import Logo from "../../Img/Logo.svg";
+import Menu from "../../Img/Menu.svg";
 
 import "./Navbar.scss";
 
