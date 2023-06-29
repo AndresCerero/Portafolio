@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 //Libreria de imagenes
 import { useEffect, useState } from "react";
 
@@ -15,7 +17,6 @@ import Layout from "../../Layout/Index";
 
 //Css
 import "./home.scss";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isImg, setIsImg] = useState(false);

@@ -13,12 +13,6 @@ const Items = () => {
         <div className="Items__Slider__Card">
           <Profile />
         </div>
-        <div className="Items__Slider__Card">3</div>
-        <div className="Items__Slider__Card">4</div>
-        <div className="Items__Slider__Card">1</div>
-        <div className="Items__Slider__Card">2</div>
-        <div className="Items__Slider__Card">3</div>
-        <div className="Items__Slider__Card">4</div>
       </div>
     </section>
   );

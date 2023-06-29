@@ -11,7 +11,7 @@
     .Home__Perfil__Projectss {
       position: relative;
       z-index: 4;
-      margin-top: -14%;
+      margin-top: -8%;
     }
   }
 }
@@ -19,6 +19,7 @@
 .Home__Perfil {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include vars.Desktop {
     flex-direction: row-reverse;
@@ -60,10 +61,11 @@
       color: vars.$Second-Color;
       background-color: vars.$first-Color;
       border-radius: 1.2rem;
+      margin: 0.8rem;
       cursor: pointer;
 
       padding: clamp(0.8rem, 50%, 1.2rem) clamp(2rem, 50%, 6rem)
-        clamp(0.8rem, 50%, .8rem);
+        clamp(0.8rem, 50%, 0.8rem);
 
       &:hover {
         background-color: vars.$Second-Color;
@@ -72,20 +74,9 @@
       }
     }
 
-    .Home__Perfil__Button--Margin {
-      margin-bottom: 2rem;
-      @include vars.mobile {
-        margin-bottom: 0;
-      }
+    @include vars.mobile {
+      flex-wrap: nowrap;
     }
-  }
-
-  @include vars.Desktop {
-    margin-top: 6%;
-  }
-
-  @include vars.DesktopX {
-    margin-top: 10%;
   }
 }
 

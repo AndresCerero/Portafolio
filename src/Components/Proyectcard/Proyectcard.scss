@@ -4,7 +4,7 @@
   position: relative;
   scroll-snap-align: center;
   min-width: clamp(25rem, 50%, 40rem);
-  max-width: clamp(25rem, 50%, 40rem);
+  // max-width: clamp(25rem, 50%, 40rem);
   background: #153738;
   border-radius: 1.2rem;
   overflow: hidden;
@@ -12,7 +12,7 @@
 
   .Projects__Slider__Card__Img {
     object-fit: cover;
-    object-position: top top;
+    // object-position: top top;
     aspect-ratio: 1 / 1;
     transition: transform 0.4s ease-in-out;
 

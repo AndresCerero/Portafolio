@@ -8,7 +8,7 @@
 .Items__Tittle {
   @include vars.h4-Tittle();
   color: vars.$Second-Color;
-  padding-bottom: 1rem;
+  padding-bottom: clamp(1rem, 100%, 1.6rem);
 }
 
 .Items__Slider {
@@ -37,18 +37,20 @@
   &::-webkit-scrollbar-track {
     border-radius: 2rem;
   }
+
+  .Items__Slider__Card {
+    position: relative;
+    scroll-snap-align: center;
+    min-width: clamp(25rem, 50%, 50rem);
+    // max-width: clamp(25rem, 50%, 40rem);
+    aspect-ratio: 1 / 1;
+    background: #153738;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    object-position: top top;
+  }
 }
 
-.Items__Slider__Card {
-  position: relative;
-  scroll-snap-align: center;
-  min-width: clamp(25rem, 50%, 40rem);
-  max-width: clamp(25rem, 50%, 40rem);
-  aspect-ratio: 1 / 1;
-  background: #153738;
-  border-radius: 1.2rem;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  object-fit: cover;
-  object-position: top top;
-}
+
