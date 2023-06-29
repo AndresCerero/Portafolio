@@ -1,5 +1,7 @@
 import './Profile.scss'
 
+import FotoIncognita from "../../assets/ImagenFoto.png";
+
 const Profile = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const Profile = () => {
             <div className="profile__image">
               <div className="profile__circle profile__circle--1"></div>
               <div className="profile__circle profile__circle--2"></div>
-              <img src='https://100dayscss.com/codepen/jessica-potter.jpg' alt="img" />
+              <img src={FotoIncognita} alt="img" />
             </div>
             <div className="profile__name">Andres Cerero</div>
             <div className="profile__job">FrontEnd Developer and Design</div>

@@ -5,7 +5,12 @@ import "./Proyectos.scss";
 
 //Datos
 import projects from "../../Data/Data.jsx";
-import imagenes from "../../../public/Assets/Img";
+
+//img
+import Blob3 from '../../assets/blob3.png';
+import ImgProyectos from '../../assets/ImagenProyecto.png';
+import Left from '../../assets/Left.svg';
+import Right from '../../assets/Right.svg';
 
 //Componentes
 import Layout from "../../Layout/Index";
@@ -34,13 +39,13 @@ const Proyecto = () => {
           <div className="Proyectos__Container__First">
             <div className="Proyectos__Imagenes">
               <img
-                src={imagenes[12].component}
-                alt={imagenes[12].name}
+                src={ImgProyectos}
+                alt='ImgProyectos'
                 className="Proyectos__Imagenes__Person"
               ></img>
               <img
-                src={imagenes[14].component}
-                alt={imagenes[14].name}
+                src={Blob3}
+                alt='Blob3s'
                 className="Proyectos__Imagenes__Blob"
               ></img>
             </div>
@@ -73,13 +78,13 @@ const Proyecto = () => {
                       className="Proyectos__controls__Button"
                       onClick={goToPreviousSlide}
                     >
-                      <img src={imagenes[8].component} />
+                      <img src={Left} alt="Left"/>
                     </button>
                     <button
                       className="Proyectos__controls__Button"
                       onClick={goToNextSlide}
                     >
-                      <img src={imagenes[9].component} />
+                      <img src={Right} alt="Right"/>
                     </button>
                   </div>
                 </div>

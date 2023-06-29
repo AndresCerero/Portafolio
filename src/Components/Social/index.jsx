@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
-import Img from "../../../public/Assets/Img";
+
+import Linkeind from "../../assets/Linkedin.svg";
+import Github from "../../assets/Github.svg";
 
 import "./Social.scss";
 
@@ -8,12 +10,12 @@ const Social = () => {
     <div className="Footer__Redes">
       <li className="Footer__Redes_link">
         <NavLink to='https://www.linkedin.com/in/andycega/' target="_blank">
-          <img src={Img[4].component} alt={Img[4].name} />
+          <img src={Linkeind} alt='Linkeind' />
         </NavLink>
       </li>
       <li className="Footer__Redes_link Footer__Redes_link--Margen">
         <NavLink to='https://github.com/AndresCerero' target="_blank">
-          <img src={Img[5].component} alt={Img[5].name} />
+          <img src={Github} alt='Github' />
         </NavLink>
       </li>
     </div>

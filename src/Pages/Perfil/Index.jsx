@@ -3,7 +3,7 @@ import Layout from "../../Layout/Index";
 import PerfilSkill from "../../Components/PerfilSkill/Index";
 import Projectss from "../../Components/Projectss/Index";
 
-import imgAssets from "../../../public/Assets/Img";
+import FotoIncognita from "../../assets/ImagenFoto.png";
 
 import "./Perfil.scss";
 import { Link } from "react-router-dom";
@@ -15,8 +15,8 @@ const Perfil = () => {
         <section className="Perfil__Container">
           <section className="Perfil__First">
             <img
-              src={imgAssets[15].component}
-              alt={imgAssets[15].name}
+              src={FotoIncognita}
+              alt="FotoIncognita"
               className="Perfil__Imagen"
             />
             <h2 className="Perfil__Tittle">Andres Cerero</h2>
@@ -28,7 +28,8 @@ const Perfil = () => {
               aprendo de un equipo enfocado en productos digitales
             </p>
             <Link
-              to="https://drive.google.com/file/d/1tbsuGwEKNLsvzY9sdTFl2yO1VSgHf5E_/view?usp=sharing" target="_blank"
+              to="https://drive.google.com/file/d/1tbsuGwEKNLsvzY9sdTFl2yO1VSgHf5E_/view?usp=sharing"
+              target="_blank"
               className="Perfil__Button"
             >
               <button>Descargar Curriculum</button>

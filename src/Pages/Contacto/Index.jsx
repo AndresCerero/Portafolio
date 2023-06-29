@@ -1,11 +1,12 @@
-import imagen from "../../../public/Assets/Img";
+import ContactoForm from '../../assets/ImagendeContactoForm.png';
+import Blob2 from '../../assets/blob2.png';
+
 
 import "./Contacto.scss";
 
 import Layout from "../../Layout/Index";
 
 const Contacto = () => {
-  const { name, component } = imagen[7];
 
   return (
     <Layout>
@@ -15,15 +16,15 @@ const Contacto = () => {
             <div className="contacto__imagenes">
               <figure>
                 <img
-                  src={imagen[11].component}
-                  alt={imagen[11].name}
+                  src={Blob2}
+                  alt='Blob2'
                   className="contacto__imagenes__blob"
                 />
               </figure>
               <figure>
                 <img
-                  src={component}
-                  alt={name}
+                  src={ContactoForm}
+                  alt='ContactoForm'
                   className="contacto__imagenes__imagen"
                 />
               </figure>

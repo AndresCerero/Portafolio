@@ -1,13 +1,13 @@
-import css from '../../public/Assets/CSS.svg'
-import html from '../../public/Assets/Html.svg'
-import js from '../../public/Assets/JS.svg'
-import SASS from '../../public/Assets/Sass.svg'
-import React from '../../public/Assets/React.svg'
+import css from '../assets/CSS.svg'
+import html from '../assets/Html.svg'
+import js from '../assets/JS.svg'
+import SASS from '../assets/Sass.svg'
+import React from '../assets/React.svg'
 
 
 
-import Tienda from '../../public/Assets/Tienda.png'
-import TODO from '../../public/Assets/Todo.png'
+import Tienda from '../assets/Tienda.png'
+import TODO from '../assets/Todo.png'
 
 const Data = [
   {

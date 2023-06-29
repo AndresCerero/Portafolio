@@ -1,6 +1,10 @@
 //Libreria de imagenes
 import { useEffect, useState } from "react";
-import Img from "../../../public/Assets/Img";
+
+//img
+import ImgPerfil from "../../assets/ImagendeHome.png";
+import Blob1 from '../../assets/blob1.png';
+import ImgPerfil2 from '../../assets/ImagendePerfil.png';
 
 //Components
 import Items from "../../Components/Items/Index";
@@ -30,26 +34,26 @@ const Home = () => {
           {isImg ? (
             <div className="Home__Perfil__Imagenes">
               <img
-                src={Img[3].component}
-                alt={Img[3].name}
+                src={ImgPerfil}
+                alt='ImgPerfil'
                 className="Home__Perfil__Image"
               />
               <img
-                src={Img[10].component}
-                alt={Img[10].name}
+                src={Blob1}
+                alt='Blob1 '
                 className="Home__Perfil__Blob"
               />
             </div>
           ) : (
             <div className="Home__Perfil__Imagenes">
               <img
-                src={Img[13].component}
-                alt={Img[13].name}
+                src={ImgPerfil2}
+                alt='ImgPerfil2'
                 className="Home__Perfil__Image"
               />
               <img
-                src={Img[10].component}
-                alt={Img[10].name}
+                src={Blob1}
+                alt='Blob1'
                 className="Home__Perfil__Blob"
               />
             </div>

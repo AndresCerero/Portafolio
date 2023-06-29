@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import Social from "../Social/index.jsx";
 
-import Img from "../../../public/Assets/Img.jsx";
+import Logo from "../../assets/Logo.svg";
+import Menu from "../../assets/Menu.svg";
 
 import "./Navbar.scss";
 
@@ -49,12 +50,12 @@ const Navbar = () => {
         <div className="NavBar_Left">
           <li className="NavBar_link Navbar_link--logo">
             <NavLink to="/">
-              <img src={Img[0].component} alt="Logo" />
+              <img src={Logo} alt="Logo" />
             </NavLink>
           </li>
           <li className="NavBar_link Navbar_link--menu">
             <button onClick={handleToggleOff} className="Navbar_link--Button">
-              <img src={Img[1].component} alt="Menu" />
+              <img src={Menu} alt="Menu" />
             </button>
           </li>
         </div>
