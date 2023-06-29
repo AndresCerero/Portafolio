@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 
 //img
 import ImgPerfil from "../../Img/ImagendeHome.png";
-import Blob1 from '../../Img/blob1.png';
-import ImgPerfil2 from '../../Img/ImagendePerfil2.png';
+import Blob1 from "../../Img/blob1.png";
+import ImgPerfil2 from "../../Img/ImagendePerfil2.png";
 
 //Components
 import Items from "../../Components/Items/Index";
@@ -35,27 +35,19 @@ const Home = () => {
             <div className="Home__Perfil__Imagenes">
               <img
                 src={ImgPerfil}
-                alt='ImgPerfil'
+                alt="ImgPerfil"
                 className="Home__Perfil__Image"
               />
-              <img
-                src={Blob1}
-                alt='Blob1 '
-                className="Home__Perfil__Blob"
-              />
+              <img src={Blob1} alt="Blob1 " className="Home__Perfil__Blob" />
             </div>
           ) : (
             <div className="Home__Perfil__Imagenes">
               <img
                 src={ImgPerfil2}
-                alt='ImgPerfil2'
+                alt="ImgPerfil2"
                 className="Home__Perfil__Image"
               />
-              <img
-                src={Blob1}
-                alt='Blob1'
-                className="Home__Perfil__Blob"
-              />
+              <img src={Blob1} alt="Blob1" className="Home__Perfil__Blob" />
             </div>
           )}
           <div className="Home__Perfil__Parrafo">
@@ -65,10 +57,7 @@ const Home = () => {
               JavaScript y React con conocimiento en diseño digital
             </p>
             <div className="Home__Perfil__Buttons">
-              <Link
-                to="perfil"
-                className="Home__Perfil__Button Home__Perfil__Button--Margin"
-              >
+              <Link to="perfil" className="Home__Perfil__Button Home__Perfil__Button--Margin">
                 <button>Perfil</button>
               </Link>
               <Link to="proyectos" className="Home__Perfil__Button">

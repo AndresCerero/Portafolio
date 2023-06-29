@@ -23,6 +23,10 @@ const AppRoutes = () => {
     { path: "/proyectos", element: <Proyecto /> },
     { path: "/", element: <Home /> },
     { path: "/Portafolio/", element: <Home /> },
+
+    // Bugs que toca arreglar
+    { path: "/Portafolio/perfil", element: <Perfil />},
+    { path: "/Portafolio/proyectos", element: <Proyecto  />},
   ]);
 
   return routes;
