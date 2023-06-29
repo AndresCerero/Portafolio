@@ -22,6 +22,7 @@ const AppRoutes = () => {
     { path: "/perfil", element: <Perfil /> },
     { path: "/proyectos", element: <Proyecto /> },
     { path: "/", element: <Home /> },
+    { path: "/Portafolio/", element: <Home /> },
   ]);
 
   return routes;
