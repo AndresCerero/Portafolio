@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 //img
 import ImgPerfil from "../../Img/ImagendeHome.png";
 import Blob1 from '../../Img/blob1.png';
-import ImgPerfil2 from '../../Img/ImagendePerfil.png';
+import ImgPerfil2 from '../../Img/ImagendePerfil2.png';
 
 //Components
 import Items from "../../Components/Items/Index";
