@@ -32,11 +32,12 @@ const Contacto = () => {
           <article className="contacto__Second">
             <h2 className="contacto__Tittle">Contacto</h2>
             <div className="contacto__form">
-              <form name="contact" method="POST"  data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true" action="/contacto">
                 <div className="contacto__form_wrap">
                   <label className="contacto_form__name">Nombre</label>
                   <input
                     type="text"
+                    name="nombre"
                     required
                     autoComplete="off"
                     className="contacto_form__input"
@@ -48,6 +49,7 @@ const Contacto = () => {
                   </label>
                   <textarea
                     type="text"
+                    name="mensaje"
                     required
                     autoComplete="off"
                     className="contacto_form__textArea"
