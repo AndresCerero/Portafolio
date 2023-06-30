@@ -99,6 +99,7 @@
     height: 10rem;
     border: 1px solid vars.$Gray3-Color;
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    resize: none;
     &:focus {
       outline: none;
       border-color: vars.$Second-Color;
