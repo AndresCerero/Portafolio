@@ -34,7 +34,7 @@ const Contacto = () => {
             <div className="contacto__form">
               <form
                 name="contact"
-                action="/pages/success"
+                action="/"
                 method="POST"
                 data-netlify="true"
               >
