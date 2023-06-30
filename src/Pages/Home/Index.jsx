@@ -74,6 +74,33 @@ const Home = () => {
           <Items />
         </div>
       </div>
+      <form name="contact" method="POST" netlify>
+                <div className="contacto__form_wrap">
+                  <label className="contacto_form__name">Nombre</label>
+                  <input
+                    type="text"
+                    name="nombre"
+                    required
+                    autoComplete="off"
+                    className="contacto_form__input"
+                  />
+                </div>
+                <div className="contacto__form_wrap">
+                  <label className="contacto_form__mensaje">
+                    Deja tu mensaje
+                  </label>
+                  <textarea
+                    type="text"
+                    name="mensaje"
+                    required
+                    autoComplete="off"
+                    className="contacto_form__textArea"
+                  />
+                </div>
+                <button type="submit" className="Form__Button">
+                  Contactar
+                </button>
+              </form>
     </Layout>
   );
 };
