@@ -84,8 +84,8 @@ const Contacto = () => {
                 // data-netlify="true"
                 onSubmit={handleSubmit}
               >
-                {/* <input type="hidden" name="form-name" value="contact"/> */}
-
+                <input type="hidden" name="form-name" value="contact"/>
+                
                 <div className="contacto__form_wrap">
                   <label className="contacto_form__name">Nombre</label>
                   <input

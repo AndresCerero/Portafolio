@@ -13,10 +13,11 @@
     <title>Cerero</title>
   </head>
   <body>
-    <!-- <form name="contact" netlify netlify-honeypot="bot-field" action="/pages/success" method="POST" data-netlify="true" style="display: none;">
-        <input type="text" name="nombre" />
-        <textarea type="text" name="mensaje" ></textarea>
-    </form> -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
