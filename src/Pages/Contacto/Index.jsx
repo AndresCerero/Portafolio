@@ -32,7 +32,7 @@ const Contacto = () => {
           <article className="contacto__Second">
             <h2 className="contacto__Tittle">Contacto</h2>
             <div className="contacto__form">
-              <form name="contact" method="POST" netlify>
+              <form name="contact" method="POST" netlify action="/">
                 <div className="contacto__form_wrap">
                   <label className="contacto_form__name">Nombre</label>
                   <input
