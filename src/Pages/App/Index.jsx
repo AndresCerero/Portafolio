@@ -24,9 +24,9 @@ const AppRoutes = () => {
     { path: "/", element: <Home /> },
     { path: "/Portafolio/", element: <Home /> },
 
-    // Bugs que toca arreglar
-    { path: "/Portafolio/perfil", element: <Perfil />},
-    { path: "/Portafolio/proyectos", element: <Proyecto  />},
+    // Para Git hub pages
+    // { path: "/Portafolio/perfil", element: <Perfil />},
+    // { path: "/Portafolio/proyectos", element: <Proyecto  />},
   ]);
 
   return routes;
