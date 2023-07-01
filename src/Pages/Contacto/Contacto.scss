@@ -75,6 +75,9 @@
   }
 
   .contacto_form__input {
+    color: vars.$Neutral2-Color;
+    @include vars.P3-Paragraphs();
+    line-height: normal;
     border-radius: 0.6rem;
     border: 1px solid vars.$Gray3-Color;
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
@@ -95,6 +98,9 @@
   }
 
   .contacto_form__textArea {
+    color: vars.$Neutral2-Color;
+    @include vars.P3-Paragraphs();
+    line-height: normal;
     border-radius: 0.6rem;
     height: 10rem;
     border: 1px solid vars.$Gray3-Color;

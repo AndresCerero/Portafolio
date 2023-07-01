@@ -118,7 +118,7 @@ const Contacto = () => {
 
                 <div className="contacto__form_wrap">
                   <label className="contacto_form__mensaje">
-                    Deja tu mensaje :
+                    Deja tu mensaje
                   </label>
                   <textarea
                     name="message"
