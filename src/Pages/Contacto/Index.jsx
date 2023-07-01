@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 //Img
 import ContactoForm from "../../Img/ImagendeContactoForm.png";
@@ -10,43 +11,46 @@ import Layout from "../../Layout/Index";
 
 const encode = (data) => {
   return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 };
 
 const Contacto = () => {
+  const navigate = useNavigate();
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = { name, email, message };
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...formData }),
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
     })
       .then(() => {
         resetForm();
-        window.location.href = '/Perfil';
+        const encodedEmail = encodeURIComponent(email);
+        const encodedName = encodeURIComponent(name);
+        navigate(`/checkcontact/${encodedEmail}/${encodedName}`);
       })
       .catch((error) => alert(error));
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'name') setName(value);
-    if (name === 'email') setEmail(value);
-    if (name === 'message') setMessage(value);
+    if (name === "name") setName(value);
+    if (name === "email") setEmail(value);
+    if (name === "message") setMessage(value);
   };
 
   const resetForm = () => {
-    setName('');
-    setEmail('');
-    setMessage('');
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -84,8 +88,8 @@ const Contacto = () => {
                 // data-netlify="true"
                 onSubmit={handleSubmit}
               >
-                <input type="hidden" name="form-name" value="contact"/>
-                
+                <input type="hidden" name="form-name" value="contact" />
+
                 <div className="contacto__form_wrap">
                   <label className="contacto_form__name">Nombre</label>
                   <input
@@ -111,7 +115,7 @@ const Contacto = () => {
                     className="contacto_form__input"
                   />
                 </div>
-                
+
                 <div className="contacto__form_wrap">
                   <label className="contacto_form__mensaje">
                     Deja tu mensaje :

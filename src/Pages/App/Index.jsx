@@ -10,6 +10,7 @@ import Home from "../Home/Index";
 import Contacto from "../Contacto/Index";
 import Perfil from "../Perfil/Index";
 import Proyecto from "../Proyectos/Index";
+import Checkcontact from "../Checkcontact/Index";
 
 //Components
 import Navbar from "../../Components/Navbar/Index";
@@ -22,6 +23,7 @@ const AppRoutes = () => {
     { path: "/perfil", element: <Perfil /> },
     { path: "/proyectos", element: <Proyecto /> },
     { path: "/pages/success", element: <Perfil /> },
+    { path: "/checkcontact/:email/:name", element: <Checkcontact /> },
     { path: "/", element: <Home /> },
     { path: "/*", element: <Home /> },
 
