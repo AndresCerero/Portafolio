@@ -57,8 +57,8 @@
     justify-content: space-evenly;
     align-items: center;
 
-    padding-left: clamp(2rem, 50%, 4rem);
-    padding-right: clamp(2rem, 50%, 4rem);
+    // padding-left: clamp(2rem, 50%, 4rem);
+    // padding-right: clamp(2rem, 50%, 4rem);
 
     .Checkcontact__boom {
       @include vars.h1-Tittle();
